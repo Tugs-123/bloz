@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import Alert from "react-bootstrap/Alert";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,7 +16,20 @@ export default function Home() {
     <div
       className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
     >
-      My Bloz 
+   {[
+  'primary',
+  'secondary',
+  'success',
+  'danger',
+  'warning',
+  'info',
+  'light',
+  'dark',
+   ].map((variant, idx) => (
+   <Alert key={idx} variant={variant}>
+    This is a {variant} alert—check it out!
+   </Alert>
+   ))}
     </div>
   );
 }
