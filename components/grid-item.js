@@ -1,11 +1,12 @@
 import Card from 'react-bootstrap/Card';
+import Image from "next/image"; 
 
-export default ()=> {
+export default function GridItem () {
     return (
         <Card className={`fj-card  fj-card-list`}>
                        <div className="card-body-wrapper">
                         <Card.Header className="d-flex flex-row">
-                          <img
+                          <Image
                             src="https://source.unsplash.com/random/150x150?face"
                             className="rounded-circle mr-4"
                             height="50px"

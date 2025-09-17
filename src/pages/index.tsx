@@ -1,10 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
 import Link from 'next/link';
 import MyNavbar from "components/my-navbar"
 import Intro from "components/intro"
-import Listitem from "components/list-item"
+import ListItem from "components/list-item"
 import GridItem from "components/grid-item"
 
 
@@ -37,7 +36,7 @@ export default function Home() {
       <div className={`page-wrapper`}>
         <Row className="mb-5">
           <Col md={10}>
-              <Listitem />
+              <ListItem/>
           </Col>
 
           <Col md="4">

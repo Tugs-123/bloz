@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-    export default () => (
-
+    export default function Intro () {
+      return (
         <div className="d-flex admin-intro align-items-start mb-4">
                         <Image
                             src="https://i.pravatar.cc/150"
@@ -20,4 +20,5 @@ import Image from "next/image";
                         </p> 
                     </div>            
         </div>
-    );
+      );
+    };
