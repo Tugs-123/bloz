@@ -1,23 +1,12 @@
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextPage } from "next";
 import Head from "next/head";
-import { Container, Row, Col, Navbar, Nav, Button,Card,CardHeader } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Link from 'next/link';
 import MyNavbar from "components/my-navbar"
 import Intro from "components/intro"
 import Listitem from "components/list-item"
 import GridItem from "components/grid-item"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (<>

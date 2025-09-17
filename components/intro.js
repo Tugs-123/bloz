@@ -4,7 +4,7 @@ import Image from "next/image";
 
         <div className="d-flex admin-intro align-items-start mb-4">
                         <Image
-                            src="https://via.placeholder.com/80"
+                            src="https://i.pravatar.cc/150"
                             alt="Generic placeholder"
                             width="64px"
                             height="64px"
