@@ -1,12 +1,12 @@
 
 import Card from 'react-bootstrap/Card';
-
+ 
 export  default () => (
   <Card className={`fj-card  fj-card-list`}>
               <div className="card-body-wrapper">
                 <Card.Header className="d-flex flex-row">
                   <img
-                    src="https//source.unsplash.com/user/erondu/150x150"
+                    src="https://source.unsplash.com/user/erondu/150x150"
                     className="rounded-circle mr-4"
                     height="50px"
                     width="50px"

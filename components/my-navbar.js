@@ -1,5 +1,5 @@
 import { Navbar, Nav,Button } from "react-bootstrap";
-
+import Image from "next/image";
 
 export default function MyNavbar() {
   return (

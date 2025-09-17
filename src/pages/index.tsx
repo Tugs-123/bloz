@@ -1,8 +1,8 @@
-// import Image from "next/image";
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextPage } from "next";
 import Head from "next/head";
-import { Container, Row, Col, Navbar, Nav,Image, Button,Card,CardHeader } from "react-bootstrap";
+import { Container, Row, Col, Navbar, Nav, Button,Card,CardHeader } from "react-bootstrap";
 import Link from 'next/link';
 import MyNavbar from "components/my-navbar"
 import Intro from "components/intro"
