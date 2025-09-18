@@ -4,7 +4,13 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
    images: {
-    domains: ['cdn.sanity.io'], // ашиглах гадаад домэйныг нэмнэ
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
+        pathname: '/images/**',
+      },
+    ],
   },
 };
 

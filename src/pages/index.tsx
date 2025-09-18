@@ -6,9 +6,9 @@ import Intro from "components/intro"
 import ListItem from "components/list-item"
 import GridItem from "components/grid-item"
 import {getAllPosts} from "lib/api";
+import {Post}from "lib/types";
 
-
-export default function Home( {  posts = []}) {
+export default function Home( {posts}: { posts: Post[] }) {
   return (<>
     <Container>
       <Head>
@@ -32,6 +32,7 @@ export default function Home( {  posts = []}) {
           </Col>
         </Row>
 
+      <pre>{JSON.stringify(posts, null, 2)}</pre>
 
       <hr/>
 
@@ -41,9 +42,9 @@ export default function Home( {  posts = []}) {
               <ListItem/>
           </Col>
 
-          {posts.map((post: any) =>(
-             <Col md="4" key={post._id} >
-              <GridItem post = {post}/>    
+          {posts.map((post:Post) =>(
+             <Col key={post._id} md="4">
+              <GridItem  post = {post}/>    
           </Col> 
             ))}
         </Row>
