@@ -1,11 +1,11 @@
 import Card from 'react-bootstrap/Card';
-
+import Image from 'next/image'
 export default function ListItem() {
   return (
     <Card className={`fj-card fj-card-list`}>
       <div className="card-body-wrapper">
         <Card.Header className="d-flex flex-row">
-          <img
+          <Image  
             src="/file.svg"
             className="rounded-circle mr-4"
             height={50}
