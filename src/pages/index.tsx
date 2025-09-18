@@ -32,6 +32,7 @@ export default function Home( {  posts = []}) {
           </Col>
         </Row>
 
+
       <hr/>
 
       <div className={`page-wrapper`}>
@@ -40,15 +41,11 @@ export default function Home( {  posts = []}) {
               <ListItem/>
           </Col>
 
-          {
-            posts.map((post) =>(
-
-             <Col md="4">
+          {posts.map((post: any) =>(
+             <Col md="4" key={post._id} >
               <GridItem post = {post}/>    
           </Col> 
-
-            ))
-          }
+            ))}
         </Row>
       </div>
 
