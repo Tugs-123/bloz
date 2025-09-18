@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 import Link from "next/link"
 
 export default function GridItem ({post}) {

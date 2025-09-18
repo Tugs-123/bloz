@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
    images: {
-    domains: ['source.unsplash.com', 'i.pravatar.cc'], // ашиглах гадаад домэйныг нэмнэ
+    domains: ['cdn.sanity.io'], // ашиглах гадаад домэйныг нэмнэ
   },
 };
 

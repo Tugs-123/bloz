@@ -31,7 +31,7 @@ export default function Home( {  posts = []}) {
             <Intro />
           </Col>
         </Row>
-      
+
       <hr/>
 
       <div className={`page-wrapper`}>
