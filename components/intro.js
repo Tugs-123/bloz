@@ -4,10 +4,10 @@ import Image from "next/image";
       return (
         <div className="d-flex admin-intro align-items-start mb-4">
                         <Image
-                            src="https://i.pravatar.cc/150"
+                            src="/file.svg"
                             alt="Generic placeholder"
-                            width="64px"
-                            height="64px"
+                            width={64}
+                            height={64}
                             className="rounded-circle me-3"
                             />
                     <div className="flex-grow-1 ms-3">  

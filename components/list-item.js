@@ -6,10 +6,10 @@ export default function ListItem() {
       <div className="card-body-wrapper">
         <Card.Header className="d-flex flex-row">
           <img
-            src="https://source.unsplash.com/random/150x150?face"
+            src="/file.svg"
             className="rounded-circle mr-4"
-            height="50"
-            width="50"
+            height={50}
+            width={50}
             alt="avatar"
           />
           <div>
