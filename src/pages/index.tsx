@@ -32,7 +32,7 @@ export default function Home( {posts}: { posts: Post[] }) {
           </Col>
         </Row>
 
-      <pre>{JSON.stringify(posts, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(posts, null, 2)}</pre> */}
 
       <hr/>
 
@@ -41,7 +41,7 @@ export default function Home( {posts}: { posts: Post[] }) {
           <Col md={10}>
               <ListItem/>
           </Col>
-
+{/*  */}
           {posts.map((post:Post) =>(
              <Col key={post._id} md="4">
               <GridItem  post = {post}/>    
