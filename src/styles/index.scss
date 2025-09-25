@@ -22,6 +22,10 @@ body{
 
 .page-wrapper {
     padding-top:20px;
+
+   overflow: hidden;       /* float clear хийхийн тулд */
+  word-break: break-word; /* үг хэт урт байвал тасална */
+  white-space: normal;
 }
 
 .card.fj-card{
@@ -217,6 +221,16 @@ body{
 .blog-image {
   margin-bottom: 10px;
   text-align: center;
+
+  &-left {
+    float: left;
+    margin-right: 30px;
+  }
+
+    &-right {
+    float: right;
+    margin-left: 30px;
+  }
 }
 .image-alt {
   margin-top: 3px;
