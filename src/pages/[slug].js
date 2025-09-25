@@ -41,7 +41,7 @@ const components = {
 
 
 
-export default  ({post}) =>  {
+ function BlogPost  ({post}) {
 
     return <Layout>
         <Row>
@@ -84,6 +84,8 @@ export default  ({post}) =>  {
         </Row>
     </Layout>
 }
+
+export default BlogPost;
 
     export const getStaticProps = async ({ params }) => {
 
